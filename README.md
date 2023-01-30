@@ -23,7 +23,7 @@
 - [MollySophia](https://github.com/MollySophia) ```Допоміг виправити стан батареї```
 - [haouarihk](https://github.com/haouarihk) ```Чудові пропозиції щодо приміток до команд, а також зробив новий посібник```
 - [bibarub](https://github.com/bibarub) ```Покращення керівництва```
-- [wormstest](https://github.com/wormstest) ```Український та російський переклад`` 
+- [wormstest](https://github.com/wormstest) ```Український та російський переклад```
 - [proganime1200](https://github.com/proganime1200) ```Надзвичайно допоміг зробити це можливим, зробив значний внесок у старий посібник, знайшовши непотрібні розділи bk01-04, і майже зумів отримати завантаження winpe на ранніх етапах```
 
 </details>  
