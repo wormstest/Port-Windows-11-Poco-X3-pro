@@ -1,63 +1,40 @@
-Оновлення драйверів у Windows
-#### Запустіть TWRP за допомогою fastboot використовуючи комп'ютер
+## Оновлення драйверів Windows
+### Запустіть TWRP за допомогою fastboot використовуючи комп'ютер
 
 ```cmd
 fastboot boot <twrp.img>
 ````
-
 > Якщо у вас вже встановлено TWRP, просто затисніть кнопки живлення та гучності + під час запуску телефону
 
-## Скопіюйте сценарій msc.sh у телефон
-
+### Скопіюйте сценарій msc.sh у телефон
 ```cmd
 adb push msc.sh /sbin
 ````
 
 ### Виконання сценарію msc.sh
-
 ```cmd
 adb shell sh /sbin/msc.sh
 ````
 
-## Призначення літери диску
-
-#### Запуск diskpart
-
-> Коли ваш POCO X3 Pro визначився як диск
-
-```cmd
-diskpart
-````
-
-### Призначення літери `x` розділу Windows
-
-#### Виберіть розділ Windows на телефоні
-> Використовуйте list volume, щоб знайти його, зазвичай це передостанній розділ.
+### Призначення літери диску
+> Коли ваш телефон визначився як диск запустіть diskpart
 ```diskpart
-select volume <номер>
-````
+Використовуйте list vol для того, щоб знайти розділи Windows і ESP, звичайно вони останні
+# select volume <win-partition-number>
+# assign letter=x
+# select volume <esp-partition-number>
+# assign letter=y
+# exit
+```
 
-#### Призначення літери x
-```diskpart
-assign letter=x
-````
-
-### Вихід з diskpart:
-```diskpart
-exit
-````
-
-# Встановлення драйверів
+### Встановлення драйверів
 
 > Замініть `<vayudriversfolder>` на вашу назву теки з драйверами.
-
 > Відкрийте cmd від імені адміністратора
-
 ```cmd
 .\driverupdater.exe -d <vayudriversfolder>\definitions\Desktop\ARM64\Internal\vayu.txt -r <vayudriversfolder> -p X:
 ````
 
-##### Завантаження із завантажувального образу UEFI
-
+### Завантаження образу UEFI
 ````
 fastboot flash boot <uefi.img>
