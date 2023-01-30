@@ -1,14 +1,14 @@
-# Windows on the POCO X3 Pro
+# Windows на POCO X3 Pro
 <img align="center" src="https://github.com/wormstest/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" alt="Windows 11 Running On A Poco X3 Pro">
 
-- [Status of the port](https://github.com/wormstest/WoA-vayu/blob/main/English/status.md)
-- [Windows installation instructions](https://github.com/wormstest/WoA-vayu/blob/main/English/install.md)
-- [Dualboot beetween Android and Windows](https://github.com/wormstest/WoA-vayu/blob/main/English/troubleshooting.md)
-- [Uninstall Windows](https://github.com/wormstest/WoA-vayu/blob/main/English/uninstall.md)
-- [Update drivers instruction](https://github.com/wormstest/WoA-vayu/blob/main/English/update.md)
-- [Troubleshooting issues](https://github.com/wormstest/WoA-vayu/blob/main/English/troubleshooting.md)
+- [Статус порту](/status.md)
+- [Інструкція з встановлення Windows](/install.md)
+- [Подвійне завантаження між Android і Windows](/dualboot.md)
+- [Видалення Windows](/uninstall.md)
+- [Інструкція по оновленню драйверів](/update.md)
+- [Усунення проблем](/troubleshooting.md)
 <details>
-<summary><b><strong>Contributors</strong></b></summary>
+<summary><b><strong>Вкладники</strong></b></summary>
 
 - [Morc](Https://GitHub.com/themorc) ```Made the vayu images```
 - [Icesito68](https://github.com/Icesito68) ```Made Windows partitioning commands and made this repo```
