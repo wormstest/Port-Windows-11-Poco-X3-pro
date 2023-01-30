@@ -10,13 +10,13 @@ fastboot boot <twrp.img>
 ## Скопіюйте сценарій msc.sh у телефон
 
 ```cmd
-adb push msc/sbin
+adb push msc.sh /sbin
 ````
 
 ### Виконання сценарію msc.sh
 
 ```cmd
-adb shell sh /sbin/msc
+adb shell sh /sbin/msc.sh
 ````
 
 ## Призначення літери диску
