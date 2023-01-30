@@ -1,9 +1,4 @@
 # Windows on the POCO X3 Pro
-<details> 
-<summary><strong>Another languages</strong></summary>
-
-</details>
-
 <img align="center" src="https://github.com/wormstest/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" alt="Windows 11 Running On A Poco X3 Pro">
 
 - [Status of the port](https://github.com/wormstest/WoA-vayu/blob/main/English/status.md)
