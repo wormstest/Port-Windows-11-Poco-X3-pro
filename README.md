@@ -10,21 +10,21 @@
 <details>
 <summary><b><strong>Вкладники</strong></b></summary>
 
-- [Morc](Https://GitHub.com/themorc) ```Made the vayu images```
+- [Morc](Https://GitHub.com/themorc) ```Зробив зображення телефону```
 - [Icesito68](https://github.com/Icesito68) ```Made Windows partitioning commands and made this repo```
-- [Map220v](https://github.com/map220v) ```Provided help and vayu UEFI uses nabu UFS patches and ACPI and also ported mi pad 5 drivers```
-- [Degdag](https://github.com/degdag) ```Improves UEFI and ported drivers```
-- [halal-beef](https://github.com/halal-beef) ```Built EDK2 and modified it enough to boot Windows, also ported drivers```
-- [Renegade Project](https://github.com/edk2-porting) ```Making the core of this project```
-- [gus33000](https://github.com/gus33000) ```Providing help, also made base install guide, all of the original drivers and the msc script```
-- [Renegade Project Discord members](https://discord.gg/XXBWfag) ```Provided Help```
-- [ArturoGC06](https://github.com/ArturoGC06) ```Helped in the beginning of the project to the translations and gave Windows data```
-- [SebastianZSXS](https://github.com/SebastianZSXS) ```Helped to patch Windows PE```
-- [MollySophia](https://github.com/MollySophia) ```Helped to fix battery status```
-- [haouarihk](https://github.com/haouarihk) ```Great suggestions on the command notes, also made the new guide```
-- [bibarub](https://github.com/bibarub) ```Guide improvenents```
-- [wormstest](https://github.com/wormstest) ```Russian and Ukrainian translation``` 
-- [proganime1200](https://github.com/proganime1200) ```Tremendously helped to make this possible, heavily contirbuted to the old guide by finding bk01-04 partitions and had managed to nearly get winpe booting in the early stages```
+- [Map220v](https://github.com/map220v) ```Надано допомогу та vayu UEFI. Використано патчі UFS з nabu та ACPI, а також перенесено драйвери з Xiaomi Pad 5```
+- [Degdag](https://github.com/degdag) ```Створив UEFI та переніс драйвери```
+- [halal-beef](https://github.com/halal-beef) ```Створив EDK2 і модифікував його для завантаження Windows, також переніс драйвер```
+- [Renegade Project](https://github.com/edk2-porting) ```Створення ядра цього проекту```
+- [gus33000](https://github.com/gus33000) ```Надання допомоги, також зроблено базовий посібник зі встановлення, усі оригінальні драйвери та сценарій msc.sh```
+- [Renegade Project Discord members](https://discord.gg/XXBWfag) ```Надано допомогу```
+- [ArturoGC06](https://github.com/ArturoGC06) ```Допоміг на початку проекту з перекладами та надав дані Windows```
+- [SebastianZSXS](https://github.com/SebastianZSXS) ```Допоміг пропатчити Windows PE```
+- [MollySophia](https://github.com/MollySophia) ```Допоміг виправити стан батареї```
+- [haouarihk](https://github.com/haouarihk) ```Чудові пропозиції щодо приміток до команд, а також зробив новий посібник```
+- [bibarub](https://github.com/bibarub) ```Покращення керівництва```
+- [wormstest](https://github.com/wormstest) ```Український та російський переклад`` 
+- [proganime1200](https://github.com/proganime1200) ```Надзвичайно допоміг зробити це можливим, зробив значний внесок у старий посібник, знайшовши непотрібні розділи bk01-04, і майже зумів отримати завантаження winpe на ранніх етапах```
 
 </details>  
 
