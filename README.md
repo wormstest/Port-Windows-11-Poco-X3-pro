@@ -11,7 +11,7 @@
 <summary><b><strong>Вкладники</strong></b></summary>
 
 - [Morc](Https://GitHub.com/themorc) ```Зробив зображення телефону```
-- [Icesito68](https://github.com/Icesito68) ```Made Windows partitioning commands and made this repo```
+- [Icesito68](https://github.com/Icesito68) ```Створив команди розмітки Windows і зробив цей репозиторій```
 - [Map220v](https://github.com/map220v) ```Надано допомогу та vayu UEFI. Використано патчі UFS з nabu та ACPI, а також перенесено драйвери з Xiaomi Pad 5```
 - [Degdag](https://github.com/degdag) ```Створив UEFI та переніс драйвери```
 - [halal-beef](https://github.com/halal-beef) ```Створив EDK2 і модифікував його для завантаження Windows, також переніс драйвер```
