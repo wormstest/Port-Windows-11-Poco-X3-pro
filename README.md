@@ -1,12 +1,12 @@
 # Windows on the POCO X3 Pro
 <img align="center" src="https://github.com/wormstest/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" alt="Windows 11 Running On A Poco X3 Pro">
 
-- [Status of the port](https://github.com/wormstest/WoA-vayu/blob/main/English/status.md)
-- [Windows installation instructions](https://github.com/wormstest/WoA-vayu/blob/main/English/install.md)
-- [Dualboot beetween Android and Windows](https://github.com/wormstest/WoA-vayu/blob/main/English/troubleshooting.md)
-- [Uninstall Windows](https://github.com/wormstest/WoA-vayu/blob/main/English/uninstall.md)
-- [Update drivers instruction](https://github.com/wormstest/WoA-vayu/blob/main/English/update.md)
-- [Troubleshooting issues](https://github.com/wormstest/WoA-vayu/blob/main/English/troubleshooting.md)
+- [Status of the port](/status.md)
+- [Windows installation instructions](/install.md)
+- [Dualboot beetween Android and Windows](/troubleshooting.md)
+- [Uninstall Windows](/uninstall.md)
+- [Update drivers instruction](/update.md)
+- [Troubleshooting issues](/troubleshooting.md)
 <details>
 <summary><b><strong>Contributors</strong></b></summary>
 
