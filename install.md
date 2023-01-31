@@ -13,13 +13,13 @@
 - [DriverUpdater для встановлення та оновлення драйверів](https://github.com/WOA-Project/DriverUpdater/releases/)
 - [UEFI образ](https://github.com/degdag/edk2-msm/releases/tag/V2.1.0)
 - [Модифікований TWRP чи OrangeFox](https://github.com/Icesito68/Port-Windows-11-Poco-X3-pro/releases/tag/Recoveries)
-#### Завантажте TWRP через комп'ютер за допомогою fastboot
+### Завантажте TWRP чи OrangeFox через комп'ютер за допомогою fastboot
 ```cmd
-fastboot boot <twrp.img>
+fastboot boot <recovery.img>
 ```
-#### Розмонтування всіх розділів
-Перейдіть до розділу монтування та розмонтуйте всі розділи.
-## Запустіть adb shell:
+### Розмонтування всіх розділів
+Перейдіть до розділу "Монтування" та розмонтуйте всі розділи.
+### Запустіть adb shell:
 ```cmd
 adb shell
 ```
@@ -27,7 +27,7 @@ adb shell
 
 ⚠️ НЕ РОБІТЬ ЖОДНОЇ ПОМИЛКИ!!! ВИ МОЖЕТЕ ЗЛАМАТИ ВАШ ПРИСТРОЙ ЗА ДОПОМОГОЮ КОМАНД НИЖЧЕ, ЯКЩО ВИКОНАЄТЕ ЇХ НЕПРАВИЛЬНО!!!
 ### Змініть розмір таблиці розділів
-> Щоби розділи Windows помістились в таблиці розділів
+> Щоб розділи Windows помістились в таблиці розділів
 ```sh
 sgdisk --resize-table 64 /dev/block/sda
 ```
@@ -36,7 +36,7 @@ sgdisk --resize-table 64 /dev/block/sda
 parted /dev/block/sda
 ```
 ### Видаліть розділ `userdata`
-> Ви повинні впевнитися що 32 это номер розділа `userdata`. Перевірте це командою  `print all`.
+> Ви повинні впевнитися що 32 это номер розділа `userdata`. Перевірте це командою `print all`.
 ```sh
 rm 32
 ```
@@ -92,8 +92,8 @@ adb shell
 ```
 ### Відформатуйте розділи для їх подальшого використання
 ```sh
-mkfs.fat -F32 -s1 /dev/block/by-name/esp
-mkfs.ntfs -f /dev/block/by-name/win
+mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPVAYU
+mkfs.ntfs -f /dev/block/by-name/win -L WINVAYU
 ```
 - Відформатуйте /userdata для використання Android: перейдіть в меню "Очищення", виберіть "Форматувати data", напишіть `yes` та натисніть "✓".
 
@@ -124,9 +124,13 @@ adb shell msc.sh
 dism /apply-image /ImageFile:<path/to/install.wim> /index:1 /ApplyDir:X:\
 ```
 ### Створіть файли завантажувача Windows
-
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
+```
+### Дозвольте непідписані драйвера
+> Якщо ви цього не зробите, то отримаєте BSOD
+```cmd
+bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set {default} testsigning on
 ```
 ### Встановлення драйверів
 #### Дізнайтесь, який у вас тип панелі
@@ -142,13 +146,6 @@ adb shell cat /proc/cmdline
 ```cmd
 driverupdater.exe -d <vayudriversfolder>\definitions\Desktop\ARM64\Internal\vayu.txt -r <vayudriversfolder> -p X:
 ```
-
-#### Дозвольте непідписані драйвера
-> Якщо ви цього не зробите, то отримаєте BSOD
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set {default} testsigning on
-```
-
 ### Завантаження Windows
 
 <details> 
@@ -166,7 +163,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set {default} testsigning on
 ```fastboot
 fastboot boot <uefi.img>
 ```
-При перезавантаженні буде завантажуватись Android, для завантажування у Windows вам потрібно знов завантажити UEFI.
+При перезавантаженні буде завантажуватись Android, для завантаження у Windows вам потрібно знов завантажити UEFI.
   
 </details>  
   
