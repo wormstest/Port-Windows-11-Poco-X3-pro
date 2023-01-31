@@ -5,7 +5,7 @@
 - [Windows installation instructions](/install.md)
 - [Dualboot beetween Android and Windows](/troubleshooting.md)
 - [Uninstall Windows](/uninstall.md)
-- [Update drivers instruction](/update.md)
+- [Update drivers instructions](/update.md)
 - [Troubleshooting issues](/troubleshooting.md)
 <details>
 <summary><b><strong>Contributors</strong></b></summary>
