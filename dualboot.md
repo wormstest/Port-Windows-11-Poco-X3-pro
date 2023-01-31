@@ -1,8 +1,37 @@
 ## Подвійне завантаження між Android і Windows
-Існує кілька варіантів подвійного завантаження:
-<details>
-<summary><strong>Резервні копії у TWRP або OrangeFox</strong></summary>
-</details>
-<details>
-<summary><strong>Використовування UEFI замість відновлення</strong></summary>
-</details>
+
+<details> 
+<summary><strong>З Android у Windows</strong></summary>
+ 
+<details> 
+<summary><strong>Використання UEFI замість відновлення</strong></summary>
+  
+- Ми можемо використовувати образ UEFI замість відновлення, для цього треба прошити UEFI в розділ recovery:
+```fastboot
+fastboot flash recovery uefi.img
+```
+- Для того щоб відновити відновлення вам треба завантажити TWRP або OrangeFox і прошити командою ```fastboot flash recovery recovery.img```
+</details>  
+
+</details>  
+  
+<details> 
+<summary><strong>З Windows в Android</strong></summary>  
+  
+<details>  
+<summary><strong>Використання резервної копії розділу Boot</strong></summary> 
+
+Ми можемо використовувати резервну копію розділу Boot для завантаження Android після використання Windows. 
+  
+Для створення резервної копії у TWRP треба перед прошивкою UEFi у головному меню натиснути "Резервне копіювання", обрати розділ Boot і місце куди буде збережена резервна копія і свайпнути внизу для підтвердження вибору і початку резервного копіювання. 
+  
+- Вам не треба кожного разу робити резервну копію перед завантаженням Windows.  
+  
+Після використання Windows, для того, щоб повернутися в Android, треба відновити розділ Boot з резервної копії. Для цього, у головному меню TWRP натисніть "Відновлення", оберіть резервну копію розділа Boot і свайпніть внизу для підтвердження вибору. Після відновлення треба перезавантажити телефон у систему, і Android повинен завантажитись.
+</details>  
+ 
+</details>    
+  
+
+
+
