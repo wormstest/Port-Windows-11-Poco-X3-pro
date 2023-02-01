@@ -14,7 +14,7 @@
 - [Icesito68](https://github.com/Icesito68) ```Створив команди розмітки Windows і зробив цей репозиторій```
 - [Map220v](https://github.com/map220v) ```Надав допомогу. Використано патчі UFS з Xiaomi Pad 5 та ACPI, а також переніс драйвери на Xiaomi Pad 5```
 - [Degdag](https://github.com/degdag) ```Створив UEFI та переніс драйвери```
-- [halal-beef](https://github.com/halal-beef) ```Створив EDK2 і модифікував його для завантаження Windows, також переніс драйвер```
+- [halal-beef](https://github.com/halal-beef) ```Створив EDK2 і модифікував його для завантаження Windows, також переніс драйвера```
 - [Renegade Project](https://github.com/edk2-porting) ```Створення ядра цього проекту```
 - [gus33000](https://github.com/gus33000) ```Надав допомоги, зробив базовий посібник зі встановлення, усі оригінальні драйвери та сценарій msc.sh```
 - [Renegade Project Discord members](https://discord.gg/XXBWfag) ```Надали допомогу```
