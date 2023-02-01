@@ -21,6 +21,7 @@
 ```cmd
 fastboot boot recovery.img
 ```
+
 ### Unmount all partitions
 Go to TWRP "Mount" menu and unmount all partitions.
 
