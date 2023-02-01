@@ -1,5 +1,7 @@
 # Install Windows on POCO X3 Pro
+
 ## Create partitions for Windows
+
 ### Notes:
 > **Warning** If you delete any partitions via diskpart later on or now windows will send a UFS command that gets misinterpreted which erase all your UFS.
 - These commands have been tested.
@@ -7,13 +9,15 @@
 - Ignore `udevadm` warnings.
 - Do not run the same command twice.
 - DO NOT REBOOT YOUR PHONE if you think you made a mistake, ask for help in the [Telegram chat](https://t.me/winonvayu)
+
 ### Need files
 - [Windows 10/11 ARM image(Windows 11 is recommended)](https://uupdump.net/)
 - [platform-tools(ADB & Fastboot)](https://developer.android.com/studio/releases/platform-tools)
 - [DriverUpdater for install and update drivers](https://github.com/WOA-Project/DriverUpdater/releases/)
 - [UEFI image](https://github.com/degdag/edk2-msm/releases/tag/V2.1.0)
 - [Modified TWRP or OrangeFox](https://github.com/Icesito68/Port-Windows-11-Poco-X3-pro/releases/tag/Recoveries)
-#### Boot TWRP or OrangeFox recovery through the PC with the command
+
+### Boot TWRP or OrangeFox recovery through the PC with the command
 ```cmd
 fastboot boot recovery.img
 ```
@@ -24,18 +28,22 @@ Go to TWRP "Mount" menu and unmount all partitions.
 ```cmd
 adb shell
 ```
+
 ⚠️ Do not run all commands at once, execute them in order!
 
 ⚠️ DO NOT MAKE ANY MISTAKE!!! YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
+
 ### Resize the partition table
 > So that the Windows partitions would fit
 ```sh
 sgdisk --resize-table 64 /dev/block/sda
 ```
+
 ### Start parted
 ```sh
 parted /dev/block/sda
 ```
+
 ### Delete the `userdata` partition
 > You can make sure that 32 is the userdata partition number by running
 >  `print all`
@@ -81,21 +89,25 @@ mkpart userdata ext4 132.2GB 255GB
 ```sh
 set 32 esp on
 ```
+
 ### Quit from parted
 ```sh
 quit
 ```
+
 - Reboot to TWRP
 
 ### Start the adb shell again
 ```cmd
 adb shell
 ```
+
 ### Format partitions for future use
 ```sh
 mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPVAYU
 mkfs.ntfs -f /dev/block/by-name/win -L WINVAYU
 ```
+
 - Format data for use Android: go to "Wipe" menu and press Format Data, then type `yes` and click "✓".
 
 ### Check if Android still starts
@@ -107,6 +119,7 @@ Restart the phone, and see if Android still works.
 ```cmd
 adb shell msc.sh
 ```
+
 ### Assign letters to disks
 > Once the X3 Pro is detected as a disk launch diskpart
 ```diskpart
@@ -117,21 +130,25 @@ Use list volume to find it, it's the ones named "WINVAYU" and "ESPVAYU"
 # assign letter=y
 # exit
 ```
+
 ### Deploying a Windows image
 > Replace `<path/to/install.wim>` with the actual install.wim path, located in sources folder inside your ISO
 > You can get it either by mounting or extracting it
 ```cmd
 dism /apply-image /ImageFile:<path/to/install.wim> /index:1 /ApplyDir:X:\
 ```
+
 ### Create Windows bootloader files for the EFI
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
+
 ### Allow unsigned drivers
 > If don't do this you'll get a BSOD
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set {default} testsigning on
 ```
+
 ### Install drivers
 #### Check what type of panel you have
 > Go to platform-tools folder
