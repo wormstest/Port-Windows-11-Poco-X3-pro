@@ -102,6 +102,7 @@ mkfs.ntfs -f /dev/block/by-name/win -L WINVAYU
 Restart the phone, and see if Android still works.
 
 ## Install Windows
+> You need to have MTP disabled in "Mount" menu
 ### Execute the msc script
 ```cmd
 adb shell msc.sh
