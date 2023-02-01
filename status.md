@@ -14,7 +14,7 @@
 | Charging                 | Only slow charging                                                                  | ⚠️            |
 | Display                  |                                                                                     | ✅            |
 | GPU                      |                                                                                     | ✅            |
-| LTE                      | Only SIM1; requires provisioning on every boot                                      | ⚠️            |
+| LTE                      | Only SIM1; requires provisioning before every boot                                  | ⚠️            |
 | SD                       | Need unplug and plug many times                                                     | ✅            |
 | Sensors                  | Fingerprint not working                                                             | ✅            |
 | Touchscreen              | Need off on display after boot                                                      | ✅            |
