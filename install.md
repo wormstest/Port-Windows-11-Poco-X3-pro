@@ -121,7 +121,7 @@ adb shell msc.sh
 ### Призначення літер розділам
 > Коли ваш телефон визначився як диск запустіть diskpart
 ```diskpart
-Використовуйте list vol для того, щоб знайти розділи Windows і ESP, звичайно вони останні
+Використовуйте list vol для того, щоб знайти розділи Windows і ESP, вони називаються WINVAYU і ESPVAYU.
 # select volume <win-partition-number>
 # assign letter=x
 # select volume <esp-partition-number>
