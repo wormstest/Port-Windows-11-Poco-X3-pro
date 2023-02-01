@@ -1,4 +1,4 @@
-## Dual boot between Android and Windows
+## Dualboot between Android and Windows
 
 <details>
 <summary><strong>From Android to Windows</strong></summary>
