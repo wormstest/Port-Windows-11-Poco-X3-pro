@@ -3,7 +3,7 @@
 ## Create partitions for Windows
 
 ### Notes:
-> **Warning** If you delete any partitions via diskpart later on or now windows will send a UFS command that gets misinterpreted which erase all your UFS.
+> **Warning!** If you delete any partitions via diskpart later on or now windows will send a UFS command that gets misinterpreted which erase all your UFS.
 - These commands have been tested.
 - All your data in Android will be erased! Backup now if needed.
 - Ignore `udevadm` warnings.
