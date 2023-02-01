@@ -51,6 +51,7 @@ parted /dev/block/sda
 ```sh
 rm 32
 ```
+
 ### Create `win, esp and userdata` partitions
 > If you get any warning message telling you to ignore or cancel, just type i and press enter.
 <details> 
@@ -69,6 +70,7 @@ mkpart win ntfs 12.2GB 70.2GB
 mkpart userdata ext4 70.2GB 127GB
 ```
 </details>
+
 <details>
 <summary><strong>For 8/256 models</strong></summary>
   
@@ -124,7 +126,7 @@ adb shell msc.sh
 ### Assign letters to disks
 > Once the X3 Pro is detected as a disk launch diskpart
 ```diskpart
-Use list volume to find it, it's the ones named "WINVAYU" and "ESPVAYU"
+Use list volume to find Windows and ESP partitions, it's the ones named "WINVAYU" and "ESPVAYU"
 # select volume <win-partition-number>
 # assign letter=x
 # select volume <esp-partition-number>
@@ -183,7 +185,7 @@ fastboot boot <uefi.img>
 Android will boot on reboot, you need to boot into UEFI again to boot into Windows.
 </details>  
   
-- If you have a BSOD with error code BOUND_IMAGE_UNSUPPORTED when you first boot Windows, you need to use [old UEFI](https://github.com/Icesito68/Port-Windows-11-Poco-X3-pro/releases)(touchscreen not working in the old version of UEFI)
+- If you have a BSOD with error code BOUND_IMAGE_UNSUPPORTED when you first boot Windows, you need to use [old UEFI](https://github.com/Icesito68/Port-Windows-11-Poco-X3-pro/releases) for first boot (touchscreen not working in the old version of UEFI).
 
 
 
